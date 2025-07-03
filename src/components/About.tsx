@@ -1,0 +1,83 @@
+const About = () => {
+  return (
+    <section id="about" className="py-20 px-6">
+      <div className="max-w-4xl mx-auto">
+        {/* Section header */}
+        <div className="text-center mb-12">
+          <h2 className="cyber-title text-3xl md:text-4xl mb-4">
+            About Me
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+        </div>
+        
+        {/* About content */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text content */}
+          <div className="space-y-6">
+            <div className="card-cyber-glow p-8 hover-lift">
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Fast Learner & Digital Developer
+              </h3>
+              <p className="cyber-text mb-4">
+                I'm a fast learner and self-motivated digital developer based in Morocco. 
+                I specialize in web technologies like HTML, CSS, JavaScript, Laravel, and React, 
+                and I'm currently diving into ethical hacking with Kali Linux.
+              </p>
+              <p className="cyber-text">
+                My goal is to use tech to solve local problems and support youth entrepreneurship.
+              </p>
+            </div>
+            
+            <div className="card-cyber p-6">
+              <h4 className="text-lg font-semibold text-accent mb-3">
+                Current Focus
+              </h4>
+              <p className="cyber-text text-sm">
+                Currently building an e-commerce website to support local youth launching 
+                digital businesses. I'm passionate about using tech for real-world impact.
+              </p>
+            </div>
+          </div>
+          
+          {/* Stats/Highlights */}
+          <div className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="card-cyber text-center p-6 hover-glow">
+                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-sm text-muted-foreground">Years Learning</div>
+              </div>
+              <div className="card-cyber text-center p-6 hover-glow">
+                <div className="text-2xl font-bold text-accent">10+</div>
+                <div className="text-sm text-muted-foreground">Projects Built</div>
+              </div>
+            </div>
+            
+            <div className="card-cyber-glow p-6">
+              <h4 className="text-lg font-semibold text-primary mb-4">Tech Stack</h4>
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Frontend Development
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
+                  Backend Systems
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Database Design
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
+                  Cybersecurity
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

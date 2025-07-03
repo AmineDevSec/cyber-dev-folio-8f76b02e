@@ -2,95 +2,177 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cybersecurity Portfolio Design System - Dark theme with electric blue accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Cyber Dark Theme */
+    --background: 220 27% 4%;              /* Very dark navy */
+    --foreground: 200 100% 95%;            /* Bright white */
+    
+    --card: 220 25% 6%;                    /* Slightly lighter dark */
+    --card-foreground: 200 100% 95%;
+    
+    --popover: 220 25% 6%;
+    --popover-foreground: 200 100% 95%;
+    
+    /* Electric Blue Primary */
+    --primary: 195 100% 50%;               /* Electric cyan blue */
+    --primary-foreground: 220 27% 4%;
+    
+    /* Secondary Blues */
+    --secondary: 220 25% 8%;               /* Dark card background */
+    --secondary-foreground: 200 100% 95%;
+    
+    --muted: 220 20% 12%;                  /* Muted backgrounds */
+    --muted-foreground: 200 15% 70%;
+    
+    /* Accent Electric */
+    --accent: 180 100% 50%;                /* Bright cyan accent */
+    --accent-foreground: 220 27% 4%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 200 100% 95%;
+    
+    --border: 220 20% 15%;                 /* Subtle borders */
+    --input: 220 20% 10%;                  /* Input backgrounds */
+    --ring: 195 100% 50%;                  /* Focus rings */
+    
+    --radius: 0.75rem;
+    
+    /* Cyber Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(240 100% 60%) 100%);
+    --gradient-glow: linear-gradient(90deg, hsl(195 100% 50% / 0.1) 0%, hsl(180 100% 50% / 0.1) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 6%) 0%, hsl(220 20% 8%) 100%);
+    
+    /* Cyber Shadows */
+    --shadow-glow: 0 0 30px hsl(195 100% 50% / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 27% 4% / 0.5);
+    --shadow-intense: 0 0 50px hsl(195 100% 50% / 0.5);
+    
+    /* Animations */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease;
   }
+}
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-mono;
+  }
+  
+  /* Cyber Typography */
+  .cyber-title {
+    @apply text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .cyber-subtitle {
+    @apply text-xl md:text-2xl text-muted-foreground;
+  }
+  
+  .cyber-text {
+    @apply text-foreground/80 leading-relaxed;
+  }
+}
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+@layer components {
+  /* Cyber Buttons */
+  .btn-cyber {
+    @apply relative px-6 py-3 bg-transparent border border-primary text-primary font-semibold rounded-lg
+           hover:bg-primary hover:text-primary-foreground transition-all duration-300
+           hover:shadow-[0_0_20px_hsl(195_100%_50%/0.5)]
+           before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-r before:from-primary/20 before:to-accent/20 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300;
+  }
+  
+  .btn-cyber-secondary {
+    @apply px-6 py-3 bg-secondary/50 text-foreground font-semibold rounded-lg border border-border
+           hover:bg-secondary hover:border-accent/50 transition-all duration-300 backdrop-blur-sm;
+  }
+  
+  /* Cyber Cards */
+  .card-cyber {
+    @apply bg-gradient-to-br from-card to-secondary/50 border border-border/50 rounded-xl p-6
+           backdrop-blur-sm hover:border-primary/30 transition-all duration-300
+           hover:shadow-[0_8px_30px_hsl(195_100%_50%/0.15)];
+  }
+  
+  .card-cyber-glow {
+    @apply card-cyber hover:shadow-[0_0_40px_hsl(195_100%_50%/0.2)] 
+           hover:bg-gradient-to-br hover:from-card hover:to-primary/5;
+  }
+  
+  /* Cyber Effects */
+  .glow-text {
+    @apply text-primary drop-shadow-[0_0_10px_hsl(195_100%_50%/0.8)];
+  }
+  
+  .glow-border {
+    @apply border-primary shadow-[0_0_20px_hsl(195_100%_50%/0.3)];
+  }
+  
+  /* Skill Bars */
+  .skill-bar {
+    @apply h-3 bg-muted rounded-full overflow-hidden relative;
+  }
+  
+  .skill-progress {
+    @apply h-full bg-gradient-to-r from-primary to-accent rounded-full relative
+           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent
+           before:animate-pulse;
+  }
+  
+  /* Hover Animations */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(195_100%_50%/0.4)];
+  }
+  
+  /* Matrix Background Effect */
+  .matrix-bg {
+    @apply relative before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_50%_50%,hsl(195_100%_50%/0.05),transparent_70%)];
+  }
+}
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+@layer utilities {
+  /* Cyber Animations */
+  @keyframes cyber-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px hsl(195 100% 50% / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(195 100% 50% / 0.6); }
+  }
+  
+  @keyframes slide-in-cyber {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px) scale(0.95); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0) scale(1); 
+    }
+  }
+  
+  .animate-cyber-pulse {
+    animation: cyber-pulse 2s ease-in-out infinite;
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  
+  .animate-slide-in {
+    animation: slide-in-cyber 0.6s ease-out;
   }
 }
 
