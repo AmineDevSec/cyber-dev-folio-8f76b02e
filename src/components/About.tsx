@@ -43,7 +43,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="card-cyber text-center p-6 hover-glow">
-                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-2xl font-bold text-primary">1+</div>
                 <div className="text-sm text-muted-foreground">Years Learning</div>
               </div>
               <div className="card-cyber text-center p-6 hover-glow">
