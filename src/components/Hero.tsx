@@ -4,9 +4,9 @@ import heroImage from "@/assets/hero-cyber.jpg";
 
 const Hero = () => {
   const socialLinks = [
-    { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "💼" },
-    { name: "GitHub", url: "https://github.com/yourusername", icon: "🔗" },
-    { name: "Email", url: "mailto:your.email@example.com", icon: "📧" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/mohamed-amine-hra", icon: "💼" },
+    { name: "GitHub", url: "https://github.com/AmineDevSec", icon: "🔗" },
+    { name: "Email", url: "mailto:mohmmadaminehra@gmail.com", icon: "📧" },
   ];
 
   return (

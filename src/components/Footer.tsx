@@ -41,13 +41,13 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="space-y-2 text-sm">
               <a 
-                href="mailto:mohamed.amine.ahra@example.com" 
+                href="mailto:mohmmadaminehra@gmail.com" 
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Email
               </a>
               <a 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://linkedin.com/in/mohamed-amine-hra" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-muted-foreground hover:text-primary transition-colors"
@@ -55,7 +55,7 @@ const Footer = () => {
                 LinkedIn
               </a>
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/AmineDevSec" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-muted-foreground hover:text-primary transition-colors"

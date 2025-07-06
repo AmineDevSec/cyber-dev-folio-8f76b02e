@@ -26,20 +26,20 @@ const Contact = () => {
     {
       icon: "📧",
       label: "Email",
-      value: "mohamed.amine.ahra@example.com",
-      link: "mailto:mohamed.amine.ahra@example.com"
+      value: "mohmmadaminehra@gmail.com",
+      link: "mailto:mohmmadaminehra@gmail.com"
     },
     {
       icon: "💼",
       label: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      link: "https://linkedin.com/in/yourprofile"
+      value: "mohamed amine hra",
+      link: "https://linkedin.com/in/mohamed-amine-hra"
     },
     {
-      icon: "📱",
-      label: "Phone",
-      value: "+212 6XX XXX XXX",
-      link: "tel:+212600000000"
+      icon: "🔗",
+      label: "GitHub",
+      value: "github.com/AmineDevSec",
+      link: "https://github.com/AmineDevSec"
     }
   ];
 
