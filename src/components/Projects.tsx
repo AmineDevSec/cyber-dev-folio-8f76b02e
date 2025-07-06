@@ -5,12 +5,7 @@ const Projects = () => {
       description: "Frontend and responsive design projects",
       icon: "🌐",
       color: "primary",
-      projects: [
-        { name: "E-commerce Platform", tech: "HTML, CSS, Bootstrap", status: "In Progress" },
-        { name: "Portfolio Website", tech: "React, Tailwind CSS", status: "Completed" },
-        { name: "Landing Page Design", tech: "HTML, CSS, JavaScript", status: "Completed" },
-        { name: "Responsive Dashboard", tech: "React, CSS Grid", status: "Planning" },
-      ]
+     
     },
     {
       title: "Programming",
