@@ -57,9 +57,6 @@ const Projects = () => {
           <h2 className="cyber-title text-3xl md:text-4xl mb-4">
             Projects & Expertise
           </h2>
-          <p className="cyber-text max-w-2xl mx-auto">
-            Showcasing my journey across web development, programming, and cybersecurity
-          </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6"></div>
         </div>
 
