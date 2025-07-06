@@ -46,9 +46,8 @@ const Hero = () => {
           
           {/* Description */}
           <p className="cyber-text max-w-2xl mx-auto text-lg leading-relaxed">
-            Welcome to my portfolio. I'm passionate about building responsive web applications 
-            and exploring cybersecurity tools using Kali Linux. This space showcases my 
-            technical journey and personal projects.
+            Welcome to my portfolio. I'm a full-stack development trainer and a self-learner in cybersecurity. 
+            Here, you'll find my latest projects and the skills I'm building with Kali Linux and modern web tools.
           </p>
           
           {/* Social links */}
