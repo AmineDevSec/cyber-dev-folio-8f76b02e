@@ -1,13 +1,6 @@
 const Projects = () => {
   const projectCategories = [
     {
-      title: "Web Development",
-      description: "Frontend and responsive design projects",
-      icon: "🌐",
-      color: "primary",
-     
-    },
-    {
       title: "Programming",
       description: "Backend development and database projects",
       icon: "💻",
