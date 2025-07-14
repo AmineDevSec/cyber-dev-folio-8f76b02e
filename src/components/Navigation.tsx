@@ -3,13 +3,30 @@ import { useState, useEffect } from "react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      // Check which section is currently in view
+      const sections = ["home", "about", "projects", "skills", "contact"];
+      const scrollPosition = window.scrollY + 100; // Offset for better detection
+      
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check initial position
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,16 +64,27 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground/80 hover:text-primary transition-colors duration-200 relative group"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
+            {navItems.map((item, index) => {
+              const sectionId = item.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+              
+              return (
+                <button
+                  key={index}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`transition-colors duration-200 relative group ${
+                    isActive 
+                      ? 'text-primary font-medium' 
+                      : 'text-foreground/80 hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Resume button */}
@@ -92,15 +120,24 @@ const Navigation = () => {
           isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}>
           <div className="py-4 space-y-2">
-            {navItems.map((item, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 text-foreground/80 hover:text-primary hover:bg-secondary/50 rounded transition-colors"
-              >
-                {item.name}
-              </button>
-            ))}
+            {navItems.map((item, index) => {
+              const sectionId = item.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+              
+              return (
+                <button
+                  key={index}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`block w-full text-left px-4 py-2 rounded transition-colors ${
+                    isActive 
+                      ? 'text-primary bg-secondary/50 font-medium' 
+                      : 'text-foreground/80 hover:text-primary hover:bg-secondary/50'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              );
+            })}
             <div className="px-4 pt-2">
               <button className="btn-cyber w-full py-2 text-sm">
                 Resume
