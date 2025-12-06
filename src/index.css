@@ -95,14 +95,18 @@
   
   /* Cyber Cards */
   .card-cyber {
-    @apply bg-gradient-to-br from-card to-secondary/50 border border-border/50 rounded-xl p-6
-           backdrop-blur-sm hover:border-primary/30 transition-all duration-300
-           hover:shadow-[0_8px_30px_hsl(195_100%_50%/0.15)];
+    @apply bg-gradient-to-br from-card to-secondary/50 border border-border/30 rounded-xl p-6
+           backdrop-blur-sm shadow-[0_2px_8px_hsl(220_27%_4%/0.3)]
+           transition-all duration-300 ease-out
+           hover:border-primary/40 hover:shadow-[0_4px_16px_hsl(195_100%_50%/0.1)]
+           hover:-translate-y-1 hover:scale-[1.01];
   }
   
   .card-cyber-glow {
-    @apply card-cyber hover:shadow-[0_0_40px_hsl(195_100%_50%/0.2)] 
-           hover:bg-gradient-to-br hover:from-card hover:to-primary/5;
+    @apply card-cyber 
+           hover:shadow-[0_8px_24px_hsl(195_100%_50%/0.15)]
+           hover:bg-gradient-to-br hover:from-card hover:to-primary/5
+           hover:-translate-y-2 hover:scale-[1.02];
   }
   
   /* Cyber Effects */
@@ -127,11 +131,11 @@
   
   /* Hover Animations */
   .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-2;
+    @apply transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02];
   }
   
   .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(195_100%_50%/0.4)];
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_hsl(195_100%_50%/0.25)];
   }
   
   /* Matrix Background Effect */
