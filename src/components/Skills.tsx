@@ -24,7 +24,7 @@ const Skills = () => {
         { name: "Kali Linux", level: 60, icon: "🐧" },
         { name: "Nmap", level: 55, icon: "🔍" },
         { name: "Aircrack-ng", level: 50, icon: "📡" },
-        { name: "Wireshark", level: 45, icon: "🔬" },
+        { name: "Network", level: 45, icon: "🔬" },
       ]
     }
   ];
