@@ -1,23 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-cyber.jpg";
-
 const Hero = () => {
-  const socialLinks = [
-    { name: "LinkedIn", url: "https://linkedin.com/in/mohamed-amine-hra", icon: "💼" },
-    { name: "GitHub", url: "https://github.com/AmineDevSec", icon: "🔗" },
-    { name: "Email", url: "mailto:mohmmadaminehra@gmail.com", icon: "📧" },
-  ];
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  const socialLinks = [{
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/mohamed-amine-hra",
+    icon: "💼"
+  }, {
+    name: "GitHub",
+    url: "https://github.com/AmineDevSec",
+    icon: "🔗"
+  }, {
+    name: "Email",
+    url: "mailto:mohmmadaminehra@gmail.com",
+    icon: "📧"
+  }];
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Cybersecurity background" 
-          className="w-full h-full object-cover opacity-30"
-        />
+        <img src={heroImage} alt="Cybersecurity background" className="w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
       </div>
       
@@ -33,9 +34,7 @@ const Hero = () => {
           </div>
           
           {/* Name with cyber effect */}
-          <h1 className="cyber-title leading-tight">
-            Mohamed Amine Ahra
-          </h1>
+          <h1 className="cyber-title leading-tight">Mohamed Amine AHRA</h1>
           
           {/* Title with typing effect */}
           <div className="cyber-subtitle">
@@ -52,36 +51,20 @@ const Hero = () => {
           
           {/* Social links */}
           <div className="flex justify-center gap-4 mt-8">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-cyber-glow px-4 py-2 text-sm hover-lift"
-                title={link.name}
-              >
+            {socialLinks.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="card-cyber-glow px-4 py-2 text-sm hover-lift" title={link.name}>
                 <span className="mr-2">{link.icon}</span>
                 {link.name}
-              </a>
-            ))}
+              </a>)}
           </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Button 
-              variant="cyber" 
-              size="lg"
-              className="hover-glow"
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button variant="cyber" size="lg" className="hover-glow" onClick={() => document.getElementById('projects')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Explore Projects
             </Button>
-            <Button 
-              variant="cyber-secondary" 
-              size="lg"
-              className="hover-lift"
-            >
+            <Button variant="cyber-secondary" size="lg" className="hover-lift">
               Download CV
             </Button>
           </div>
@@ -96,8 +79,6 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute top-1/4 left-10 w-2 h-20 bg-gradient-to-b from-primary to-transparent opacity-50"></div>
       <div className="absolute bottom-1/4 right-10 w-2 h-20 bg-gradient-to-t from-accent to-transparent opacity-50"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
