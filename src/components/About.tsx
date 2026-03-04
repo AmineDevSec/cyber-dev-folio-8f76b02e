@@ -1,4 +1,5 @@
 import certificateImg from "@/assets/certificate-cyphx.png";
+import certificateCorex from "@/assets/certificate-corex.jpg";
 
 const About = () => {
   return (
@@ -37,6 +38,16 @@ const About = () => {
               <img src={certificateImg} alt="CyphX Arena JR Certificate of Achievement" className="w-full rounded-lg border border-border/30 mb-3" />
               <p className="cyber-text text-sm">
                 Certificate of Achievement from <span className="text-primary font-semibold">Club CyphX ESTBM</span> for outstanding performance, teamwork, and mastery across eight technical challenges.
+              </p>
+            </div>
+
+            <div className="card-cyber p-4">
+              <h4 className="text-lg font-semibold text-accent mb-3">
+                🏆 COREX Origins CTF — 2nd Place
+              </h4>
+              <img src={certificateCorex} alt="COREX Origins CTF Certificate" className="w-full rounded-lg border border-border/30 mb-3" />
+              <p className="cyber-text text-sm">
+                Certificate of Participation from <span className="text-primary font-semibold">COREX Club</span> for achieving 2nd place in the 1st Edition of COREX Origins CTF, hosted by the Highest School of Technology - Beni Mellal, February 7-8, 2026.
               </p>
             </div>
           </div>
