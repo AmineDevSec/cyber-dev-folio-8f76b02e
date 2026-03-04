@@ -33,7 +33,7 @@ const Contact = () => {
       icon: "💼",
       label: "LinkedIn",
       value: "mohamed amine hra",
-      link: "https://linkedin.com/in/mohamed-amine-hra"
+      link: "https://linkedin.com/in/mohmmad-amine-hra-142986364"
     },
     {
       icon: "🔗",
