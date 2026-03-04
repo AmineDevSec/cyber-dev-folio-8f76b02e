@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-cyber.jpg";
 const Hero = () => {
   const socialLinks = [{
     name: "LinkedIn",
-    url: "https://linkedin.com/in/mohamed-amine-hra",
+    url: "https://linkedin.com/in/mohmmad-amine-hra-142986364",
     icon: "💼"
   }, {
     name: "GitHub",
