@@ -22,7 +22,7 @@ const Skills = () => {
       title: "Cybersecurity Tools",
       skills: [
         { name: "Kali Linux", level: 60, icon: "🐧" },
-        { name: "Nmap", level: 55, icon: "🔍" },
+        { name: "Web-Exploitation", level: 55, icon: "🔍" },
         { name: "Aircrack-ng", level: 50, icon: "📡" },
         { name: "Network", level: 45, icon: "🔬" },
       ]
