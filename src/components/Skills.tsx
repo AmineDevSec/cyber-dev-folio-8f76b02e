@@ -15,7 +15,7 @@ const Skills = () => {
         { name: "PHP", level: 80, icon: "🔧" },
         { name: "Python", level: 70, icon: "🐍" },
         { name: "SQL", level: 85, icon: "🗄️" },
-        { name: "Laravel", level: 65, icon: "🏗️" },
+        { name: "Lange C", level: 65, icon: "🏗️" },
       ]
     },
     {
