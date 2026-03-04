@@ -1,3 +1,5 @@
+import certificateImg from "@/assets/certificate-cyphx.png";
+
 const About = () => {
   return (
     <section id="about" className="py-20 px-6">
