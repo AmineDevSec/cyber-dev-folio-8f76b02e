@@ -1,3 +1,5 @@
+import certificateImg from "@/assets/certificate-cyphx.png";
+
 const About = () => {
   return (
     <section id="about" className="py-20 px-6">
@@ -28,13 +30,13 @@ const About = () => {
               </p>
             </div>
             
-            <div className="card-cyber p-6">
+            <div className="card-cyber p-4">
               <h4 className="text-lg font-semibold text-accent mb-3">
-                Current Focus
+                🏆 CyphX Arena JR — Top 2 Winners
               </h4>
+              <img src={certificateImg} alt="CyphX Arena JR Certificate of Achievement" className="w-full rounded-lg border border-border/30 mb-3" />
               <p className="cyber-text text-sm">
-                Currently building an e-commerce website to support local youth launching 
-                digital businesses. I'm passionate about using tech for real-world impact.
+                Certificate of Achievement from <span className="text-primary font-semibold">Club CyphX ESTBM</span> for outstanding performance, teamwork, and mastery across eight technical challenges.
               </p>
             </div>
           </div>
