@@ -15,9 +15,9 @@ const Projects = () => {
           <p className="cyber-text mb-6">
             Want to see more details or collaborate on a project?
           </p>
-          <button className="btn-cyber px-8 py-3 text-lg">
+          <a href="https://github.com/AmineDevSec" target="_blank" rel="noopener noreferrer" className="btn-cyber px-8 py-3 text-lg inline-block">
             View GitHub Repository
-          </button>
+          </a>
         </div>
       </div>
     </section>
