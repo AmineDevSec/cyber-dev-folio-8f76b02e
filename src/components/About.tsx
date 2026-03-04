@@ -1,4 +1,5 @@
 import certificateImg from "@/assets/certificate-cyphx.png";
+import certificateCorex from "@/assets/certificate-corex.jpg";
 
 const About = () => {
   return (
