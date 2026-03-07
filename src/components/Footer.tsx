@@ -72,7 +72,7 @@ const Footer = () => {
             © {currentYear} Mohamed Amine Ahra. All rights reserved.
           </div>
           <div className="mt-4 md:mt-0">
-            Built with React & Tailwind CSS
+            Built with React & Tailwind CSS with <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Lovable.dev</a>
           </div>
         </div>
       </div>
