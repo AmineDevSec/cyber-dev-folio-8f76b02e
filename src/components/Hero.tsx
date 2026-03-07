@@ -46,7 +46,7 @@ const Hero = () => {
           {/* Description */}
           <p className="cyber-text max-w-2xl mx-auto text-lg leading-relaxed">
             Welcome to my portfolio. I'm a cybersecurity studying at the Higher School of Technology and a self-learner in full-stack development. 
-            Here, you'll find my latest projects and the skills I'm building with Kali Linux, modern web tools and penetration testing as I continue to expand my knowledge and experience.
+            Here, you'll find my latest projects and the skills I'm building with Kali Linux, modern web tools and penetration testing as I continue to expand my knowledge and experience. Build with <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Lovable.dev</a>
           </p>
           
           {/* Social links */}
