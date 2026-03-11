@@ -98,6 +98,10 @@ const Skills = () => {
                 <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
                 Cloud Security (AWS)
               </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                PicoCTF
+              </li>
             </ul>
           </div>
           
