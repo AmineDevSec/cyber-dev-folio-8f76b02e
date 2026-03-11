@@ -46,16 +46,6 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6 bg-secondary/10">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="cyber-title text-3xl md:text-4xl mb-4">
-            Get In Touch
-          </h2>
-          <p className="cyber-text max-w-2xl mx-auto">
-            Ready to collaborate or discuss opportunities? Let's connect and build something amazing together.
-          </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6"></div>
-        </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact form */}
