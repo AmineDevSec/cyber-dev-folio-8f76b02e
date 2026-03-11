@@ -4,7 +4,7 @@ import certificateCorex from "@/assets/certificate-corex.jpg";
 const About = () => {
   return (
     <section id="about" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
           <h2 className="cyber-title text-3xl md:text-4xl mb-4">
@@ -14,7 +14,7 @@ const About = () => {
         </div>
         
         {/* About content */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Text content */}
           <div className="space-y-6">
             <div className="card-cyber-glow p-8 hover-lift">
