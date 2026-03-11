@@ -116,7 +116,7 @@ const Skills = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                AWS Cloud Practitioner
+                CTF
               </li>
             </ul>
           </div>
