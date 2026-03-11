@@ -100,7 +100,7 @@ const Skills = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
-                picoCTF learning
+                picoCTF studying
               </li>
             </ul>
           </div>
