@@ -14,7 +14,7 @@ const About = () => {
         </div>
         
         {/* About content */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Text content */}
           <div className="space-y-6">
             <div className="card-cyber-glow p-8 hover-lift">
