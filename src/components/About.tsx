@@ -19,7 +19,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="card-cyber-glow p-8 hover-lift">
               <h3 className="text-xl font-bold text-primary mb-4">
-                Fast Learner & Digital Developer
+                Security Informatique & Network
               </h3>
               <p className="cyber-text mb-4">
                 I'm a fast learner and self-motivated digital developer based in Morocco. 
