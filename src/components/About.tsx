@@ -68,19 +68,19 @@ const About = () => {
               <div className="grid grid-cols-2 gap-2 text-sm">
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Cybersecurity
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
                   Frontend Development
                 </div>
                 <div className="flex items-center">
-                  <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
+                  <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
                   Backend Systems
                 </div>
                 <div className="flex items-center">
-                  <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                  Database Design
-                </div>
-                <div className="flex items-center">
                   <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
-                  Cybersecurity
+                  Database Design
                 </div>
               </div>
             </div>
