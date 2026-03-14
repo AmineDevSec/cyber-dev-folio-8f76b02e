@@ -76,7 +76,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                  Backend Systems
+                  Protecte Systems
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
