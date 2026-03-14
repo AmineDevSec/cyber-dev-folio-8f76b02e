@@ -22,12 +22,10 @@ const About = () => {
                 Security Informatique & Network
               </h3>
               <p className="cyber-text mb-4">
-                I'm a fast learner and self-motivated digital developer based in Morocco. 
-                I specialize in web technologies like HTML, CSS, JavaScript, Laravel, and React, 
-                and I'm currently diving into ethical hacking with Kali Linux.
+                First-year student in Computer and Network Security in ESTBM Morocco, currently learning cybersecurity fundamentals, operating systems, and network security using Linux. I also have basic knowledge of HTML, CSS, JavaScript, and React and aim to develop practical skills to solve real-world problems.
               </p>
               <p className="cyber-text">
-                My goal is to use tech to solve local problems and support youth entrepreneurship.
+                My goal is to use my knowledge in web technologies to help and support young entrepreneurs by creating useful digital solutions.
               </p>
             </div>
             
