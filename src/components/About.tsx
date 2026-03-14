@@ -58,8 +58,8 @@ const About = () => {
                 <div className="text-sm text-muted-foreground">Years Learning</div>
               </div>
               <div className="card-cyber text-center p-6 hover-glow">
-                <div className="text-2xl font-bold text-accent">10+</div>
-                <div className="text-sm text-muted-foreground">Projects Built</div>
+                <div className="text-2xl font-bold text-accent">8+</div>
+                <div className="text-sm text-muted-foreground">Projects Web Built</div>
               </div>
             </div>
             
